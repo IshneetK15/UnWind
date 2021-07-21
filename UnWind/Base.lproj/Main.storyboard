@@ -29,6 +29,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="1. Stress does not affect me"/>
                                 <connections>
+                                    <action selector="questionOne:" destination="soN-6J-5NY" eventType="touchUpInside" id="JlC-6m-d3j"/>
+                                    <action selector="questionOne:" destination="Dsp-CX-JVz" eventType="touchUpInside" id="sMg-us-VuO"/>
                                     <segue destination="d44-JT-p9R" kind="show" id="NB0-cH-3Pw"/>
                                 </connections>
                             </button>
@@ -75,6 +77,7 @@
                     <navigationItem key="navigationItem" id="IN1-a0-YXJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="soN-6J-5NY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Dsp-CX-JVz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="666.66666666666674" y="77.678571428571431"/>
         </scene>
@@ -123,12 +126,6 @@
                                 <connections>
                                     <segue destination="wXi-yd-1lG" kind="show" id="vTP-Df-Jyz"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxE-PV-y6H">
-                                <rect key="frame" x="49" y="754" width="40" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="⬅️"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PgE-cS-vvT"/>
@@ -646,13 +643,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjh-4f-UfP">
-                                <rect key="frame" x="163" y="104" width="88" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Solution 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjh-4f-UfP">
+                                <rect key="frame" x="148" y="66" width="118" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHU-hR-4bc">
+                                <rect key="frame" x="321" y="742" width="38" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="➡️"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RUn-Ml-2FD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

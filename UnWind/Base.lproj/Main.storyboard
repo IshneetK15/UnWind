@@ -94,13 +94,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mip-fk-fiV">
-                                <rect key="frame" x="21" y="278" width="144" height="53"/>
+                                <rect key="frame" x="21" y="278" width="144" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="A. Yes"/>
                                 <connections>
+                                    <action selector="Meds:" destination="eWx-Fb-KAd" eventType="touchUpInside" id="bbN-xm-NCL"/>
                                     <action selector="MedsAlert:" destination="eWx-Fb-KAd" eventType="touchUpInside" id="hl8-qe-VbX"/>
                                     <action selector="MedsAlert:forEvent:" destination="eWx-Fb-KAd" eventType="touchUpInside" id="fhm-CV-nuf"/>
+                                    <action selector="showMessage:" destination="eWx-Fb-KAd" eventType="touchUpInside" id="Ucu-HT-rsb"/>
                                     <action selector="test:" destination="eWx-Fb-KAd" eventType="touchUpInside" id="3cS-XR-P8w"/>
                                 </connections>
                             </button>
@@ -109,15 +111,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="B. No"/>
+                                <connections>
+                                    <segue destination="wXi-yd-1lG" kind="show" id="xIt-Fc-NKk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CM1-Rx-mWb">
                                 <rect key="frame" x="49" y="425" width="225" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="C. Prefer not to say"/>
+                                <connections>
+                                    <segue destination="wXi-yd-1lG" kind="show" id="vTP-Df-Jyz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxE-PV-y6H">
-                                <rect key="frame" x="49" y="819" width="40" height="54"/>
+                                <rect key="frame" x="49" y="754" width="40" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="⬅️"/>
@@ -138,7 +146,7 @@
             <objects>
                 <viewController id="wXi-yd-1lG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sXX-TP-VoR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have you ever been diagnosed with a mental illness before?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CE6-xS-Gd3">
@@ -153,23 +161,33 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="A. Yes"/>
+                                <connections>
+                                    <segue destination="ILk-rQ-V8N" kind="show" id="xzA-6Y-b5k"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDt-fk-ZWF">
                                 <rect key="frame" x="36" y="336" width="64" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="B. No"/>
+                                <connections>
+                                    <segue destination="ILk-rQ-V8N" kind="show" id="UYL-4m-oRW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhS-a8-BK3">
                                 <rect key="frame" x="36" y="425" width="225" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="C. Prefer not to say"/>
+                                <connections>
+                                    <segue destination="ILk-rQ-V8N" kind="show" id="BVw-A6-c5l"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JHS-m1-lV8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Mwb-PE-22Y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJi-Nq-DOg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -180,7 +198,7 @@
             <objects>
                 <viewController id="ILk-rQ-V8N" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Vj-Hr-xer">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have you ever seen a therapist?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pE-yc-Go5">
@@ -195,23 +213,33 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="A. Yes"/>
+                                <connections>
+                                    <segue destination="m5d-Nw-zYC" kind="show" id="yHV-F2-FyO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tni-cz-UgV">
                                 <rect key="frame" x="20" y="300" width="64" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="B. No"/>
+                                <connections>
+                                    <segue destination="m5d-Nw-zYC" kind="show" id="BaD-54-uww"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEa-K5-WH6">
                                 <rect key="frame" x="20" y="400" width="225" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="C. Prefer not to say"/>
+                                <connections>
+                                    <segue destination="m5d-Nw-zYC" kind="show" id="yaJ-tw-2dQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yz8-DO-rEC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="M2D-wZ-7vc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2h9-H7-aWA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -222,7 +250,7 @@
             <objects>
                 <viewController id="m5d-Nw-zYC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wsj-GJ-hiS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How have your sleep patterns been?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ife-bg-gNb">
@@ -237,35 +265,51 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="A. Excellent"/>
+                                <connections>
+                                    <segue destination="Qaf-tH-3c0" kind="show" id="7bC-Td-sFw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHf-2m-RA6">
                                 <rect key="frame" x="40" y="313" width="172" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="B. Satisfactory"/>
+                                <connections>
+                                    <segue destination="Qaf-tH-3c0" kind="show" id="HF5-Fo-fOn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzV-gn-qlg">
                                 <rect key="frame" x="40" y="410" width="95" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="C. Okay"/>
+                                <connections>
+                                    <segue destination="Qaf-tH-3c0" kind="show" id="RXU-Mk-h56"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebU-3f-5J9">
                                 <rect key="frame" x="40" y="506" width="191" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="D. Not sufficient"/>
+                                <connections>
+                                    <segue destination="Qaf-tH-3c0" kind="show" id="gqI-bl-cmy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acr-1f-Wg8">
                                 <rect key="frame" x="40" y="596" width="221" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="E. Prefer not to say"/>
+                                <connections>
+                                    <segue destination="Qaf-tH-3c0" kind="show" id="lp7-OQ-Aty"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ilL-N7-l1s"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="kOo-sH-bKl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wzr-iR-qR8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -276,7 +320,7 @@
             <objects>
                 <viewController id="Qaf-tH-3c0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HDB-ny-iHE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How have your eating patterns been?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w78-8e-899">
@@ -291,35 +335,51 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="A. Excellent"/>
+                                <connections>
+                                    <segue destination="Hor-RB-HLk" kind="show" id="kr2-wI-x2i"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJ9-iv-F71">
                                 <rect key="frame" x="30" y="305" width="172" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="B. Satisfactory"/>
+                                <connections>
+                                    <segue destination="Hor-RB-HLk" kind="show" id="h6d-iH-GQp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igl-fx-yge">
                                 <rect key="frame" x="30" y="388" width="95" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="C. Okay"/>
+                                <connections>
+                                    <segue destination="Hor-RB-HLk" kind="show" id="jZr-rj-br5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRu-7k-9eV">
                                 <rect key="frame" x="30" y="474" width="191" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="D. Not sufficient"/>
+                                <connections>
+                                    <segue destination="Hor-RB-HLk" kind="show" id="GOk-IA-JZp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PlY-tP-AAk">
                                 <rect key="frame" x="30" y="554" width="221" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="E. Prefer not to say"/>
+                                <connections>
+                                    <segue destination="Hor-RB-HLk" kind="show" id="nOc-Yu-HZr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VSg-af-mT9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="YDC-Nd-0wr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xz8-ik-GHG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -330,7 +390,7 @@
             <objects>
                 <viewController id="Hor-RB-HLk" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gCR-ON-5xM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How long have you been feeling this level of stress?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHv-Wt-Cb6">
@@ -345,35 +405,51 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="A. 1 day"/>
+                                <connections>
+                                    <segue destination="Dml-JX-Bv2" kind="show" id="gyU-6E-tDB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFY-pH-MKv">
                                 <rect key="frame" x="31" y="292" width="138" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="B. 2-3 days"/>
+                                <connections>
+                                    <segue destination="Dml-JX-Bv2" kind="show" id="GHC-V1-h4S"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GL5-r4-pYf">
                                 <rect key="frame" x="29" y="374" width="142" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="C. 4-6 days"/>
+                                <connections>
+                                    <segue destination="Dml-JX-Bv2" kind="show" id="T4N-zb-yhs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLb-Ww-6OZ">
                                 <rect key="frame" x="31" y="466" width="128" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="D. 2 weeks"/>
+                                <connections>
+                                    <segue destination="Dml-JX-Bv2" kind="show" id="ScG-7X-zLC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tn8-5C-45c">
                                 <rect key="frame" x="31" y="558" width="144" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="E. 2+ weeks"/>
+                                <connections>
+                                    <segue destination="Dml-JX-Bv2" kind="show" id="ehY-iI-sFO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1fw-By-PNW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zmX-7S-8Qm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oT4-Uo-VMF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -384,7 +460,7 @@
             <objects>
                 <viewController id="Dml-JX-Bv2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I3w-V1-MKs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is causing your stress?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c93-wZ-9HN">
@@ -399,35 +475,51 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="A. School"/>
+                                <connections>
+                                    <segue destination="Mh5-BD-1Lh" kind="show" id="ezJ-oP-Nxi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v27-pE-mAy">
                                 <rect key="frame" x="36" y="258" width="92" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="B. Work"/>
+                                <connections>
+                                    <segue destination="Mh5-BD-1Lh" kind="show" id="wpQ-ua-bub"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2L5-bD-3L3">
                                 <rect key="frame" x="36" y="347" width="205" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="C. Family/Friends"/>
+                                <connections>
+                                    <segue destination="Mh5-BD-1Lh" kind="show" id="LEY-Pt-ePr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xX5-kF-uLu">
                                 <rect key="frame" x="36" y="425" width="118" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="D. Trauma"/>
+                                <connections>
+                                    <segue destination="Mh5-BD-1Lh" kind="show" id="O29-4q-3AN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TA7-tO-D8B">
                                 <rect key="frame" x="36" y="510" width="96" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="E. Other"/>
+                                <connections>
+                                    <segue destination="Mh5-BD-1Lh" kind="show" id="xMV-PE-d0v"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="H0O-rc-x2y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Er0-vd-6mf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ugK-qo-ouq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -438,7 +530,7 @@
             <objects>
                 <viewController id="Mh5-BD-1Lh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="88d-aN-b1M">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To what extent do you feel the stress controls your life/decisions?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJi-FZ-3oG">
@@ -453,35 +545,51 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="A. Not at all"/>
+                                <connections>
+                                    <segue destination="X15-5J-5DI" kind="show" id="3TG-KC-3vr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sA-ge-pD0">
                                 <rect key="frame" x="20" y="313" width="118" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="B. Slightly"/>
+                                <connections>
+                                    <segue destination="X15-5J-5DI" kind="show" id="j92-rd-4Fr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raV-Xh-izo">
                                 <rect key="frame" x="20" y="393" width="167" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="C. Sometimes"/>
+                                <connections>
+                                    <segue destination="X15-5J-5DI" kind="show" id="7FS-9i-0Bf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ub8-3C-Ynh">
                                 <rect key="frame" x="20" y="473" width="157" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="D. Frequently"/>
+                                <connections>
+                                    <segue destination="X15-5J-5DI" kind="show" id="Bla-nx-zq3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7k4-Fu-zfI">
-                                <rect key="frame" x="20" y="557" width="163" height="46"/>
+                                <rect key="frame" x="20" y="557" width="163" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="D. All the time"/>
+                                <connections>
+                                    <segue destination="X15-5J-5DI" kind="show" id="IqO-Yw-erf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8W3-42-N1U"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hlo-7Y-cBI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eix-FX-grj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -492,7 +600,7 @@
             <objects>
                 <viewController id="X15-5J-5DI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ykI-xU-iIP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is there someone/thing you often turn to for help coping?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgf-Ve-s1l">
@@ -507,17 +615,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="A. Yes"/>
+                                <connections>
+                                    <segue destination="dhB-Ux-9HN" kind="show" id="nRN-8d-Nas"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUg-wu-Pw2">
                                 <rect key="frame" x="26" y="334" width="64" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="B. No"/>
+                                <connections>
+                                    <segue destination="dhB-Ux-9HN" kind="show" id="HhB-7N-gjY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gSP-17-LZy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Cnp-uA-dSe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i1f-EG-C0F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -528,7 +643,7 @@
             <objects>
                 <viewController id="dhB-Ux-9HN" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H6v-7K-iCG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question 11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjh-4f-UfP">
@@ -542,6 +657,7 @@
                         <viewLayoutGuide key="safeArea" id="RUn-Ml-2FD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dPT-5I-RU9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rja-dH-P5j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -727,6 +843,15 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="HhB-7N-gjY"/>
+        <segue reference="3TG-KC-3vr"/>
+        <segue reference="xMV-PE-d0v"/>
+        <segue reference="T4N-zb-yhs"/>
+        <segue reference="nOc-Yu-HZr"/>
+        <segue reference="RXU-Mk-h56"/>
+        <segue reference="yHV-F2-FyO"/>
+        <segue reference="UYL-4m-oRW"/>
+        <segue reference="vTP-Df-Jyz"/>
         <segue reference="Swe-Ay-QMc"/>
     </inferredMetricsTieBreakers>
     <resources>

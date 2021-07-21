@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    
     @IBAction func submitName(_ sender: UIButton) {
         if let newTitle = nameEnter.text {
                     nameChange.text = (newTitle)

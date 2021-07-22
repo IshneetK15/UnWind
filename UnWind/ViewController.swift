@@ -17,10 +17,18 @@ class ViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        }
         // Do any additional setup after loading the view.
+    
+    // @IBAction func GoogleButton(sender: AnyObject) {
+    //if let url = NSURL(string: //"https://open.spotify.com/playlist/50UjGacysvQ5dgkEKHtosH?si=E10oZHljRm6FkL_wEw76tw&dl_branch=1") {
+  //  UIApplication.shared.open(url as URL, options:[:], completionHandler:nil)
+
+
+
     }
-    
-    
+
+        
     
     @IBAction func submitName(_ sender: UIButton) {
         if let newTitle = nameEnter.text {

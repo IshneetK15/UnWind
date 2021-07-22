@@ -372,6 +372,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
+                                    <action selector="choiceOne4:" destination="ABG-56-fdf" eventType="touchUpInside" id="Iks-mw-xbG"/>
                                     <segue destination="m5d-Nw-zYC" kind="show" id="yHV-F2-FyO"/>
                                 </connections>
                             </button>
@@ -384,6 +385,7 @@
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="choiceTwo4:" destination="ABG-56-fdf" eventType="touchUpInside" id="Zvy-VP-Dd3"/>
                                     <segue destination="m5d-Nw-zYC" kind="show" id="BaD-54-uww"/>
                                 </connections>
                             </button>
@@ -396,6 +398,7 @@
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="choiceThree4:" destination="ABG-56-fdf" eventType="touchUpInside" id="obG-Qn-8eT"/>
                                     <segue destination="m5d-Nw-zYC" kind="show" id="yaJ-tw-2dQ"/>
                                 </connections>
                             </button>
@@ -432,6 +435,7 @@
                     <navigationItem key="navigationItem" id="M2D-wZ-7vc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2h9-H7-aWA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ABG-56-fdf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2669.5652173913045" y="85.714285714285708"/>
         </scene>
@@ -458,6 +462,8 @@
                                     </attributedString>
                                 </state>
                                 <connections>
+                                    <action selector="choiceFive1:" destination="hOs-Y9-bmf" eventType="touchUpInside" id="nsl-fm-j98"/>
+                                    <action selector="choiceOne5:" destination="hOs-Y9-bmf" eventType="touchUpInside" id="jdt-Ft-vfR"/>
                                     <segue destination="Qaf-tH-3c0" kind="show" id="7bC-Td-sFw"/>
                                 </connections>
                             </button>
@@ -470,6 +476,7 @@
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="choiceTwo5:" destination="hOs-Y9-bmf" eventType="touchUpInside" id="7Qv-PW-83V"/>
                                     <segue destination="Qaf-tH-3c0" kind="show" id="HF5-Fo-fOn"/>
                                 </connections>
                             </button>
@@ -488,6 +495,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
+                                    <action selector="choiceThree5:" destination="hOs-Y9-bmf" eventType="touchUpInside" id="DKk-Ay-spl"/>
                                     <segue destination="Qaf-tH-3c0" kind="show" id="RXU-Mk-h56"/>
                                 </connections>
                             </button>
@@ -506,6 +514,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
+                                    <action selector="choiceFour5:" destination="hOs-Y9-bmf" eventType="touchUpInside" id="TGo-i8-PEq"/>
                                     <segue destination="Qaf-tH-3c0" kind="show" id="gqI-bl-cmy"/>
                                 </connections>
                             </button>
@@ -524,6 +533,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
+                                    <action selector="choiceFive5:" destination="hOs-Y9-bmf" eventType="touchUpInside" id="YIx-YB-R9O"/>
                                     <segue destination="Qaf-tH-3c0" kind="show" id="lp7-OQ-Aty"/>
                                 </connections>
                             </button>
@@ -561,6 +571,7 @@
                     <navigationItem key="navigationItem" id="kOo-sH-bKl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wzr-iR-qR8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="hOs-Y9-bmf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3331.884057971015" y="85.714285714285708"/>
         </scene>
@@ -601,11 +612,13 @@
                                     </attributedString>
                                 </state>
                                 <connections>
+                                    <action selector="choiceOne6:" destination="7vl-ZC-HJo" eventType="touchUpInside" id="zLa-df-PGQ"/>
+                                    <action selector="choiceSix1:" destination="7vl-ZC-HJo" eventType="touchUpInside" id="vrL-O6-Xvz"/>
                                     <segue destination="Hor-RB-HLk" kind="show" id="kr2-wI-x2i"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pJ9-iv-F71">
-                                <rect key="frame" x="24" y="302" width="361" height="45"/>
+                                <rect key="frame" x="23" y="295" width="361" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal">
@@ -619,6 +632,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
+                                    <action selector="choiceTwo6:" destination="7vl-ZC-HJo" eventType="touchUpInside" id="ECA-NE-IHi"/>
                                     <segue destination="Hor-RB-HLk" kind="show" id="h6d-iH-GQp"/>
                                 </connections>
                             </button>
@@ -637,6 +651,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
+                                    <action selector="choiceThree6:" destination="7vl-ZC-HJo" eventType="touchUpInside" id="4MA-dR-JYD"/>
                                     <segue destination="Hor-RB-HLk" kind="show" id="jZr-rj-br5"/>
                                 </connections>
                             </button>
@@ -655,6 +670,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
+                                    <action selector="choiceFour6:" destination="7vl-ZC-HJo" eventType="touchUpInside" id="yer-YN-EiQ"/>
                                     <segue destination="Hor-RB-HLk" kind="show" id="GOk-IA-JZp"/>
                                 </connections>
                             </button>
@@ -667,6 +683,7 @@
                                     <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="choiceFive6:" destination="7vl-ZC-HJo" eventType="touchUpInside" id="KK3-sa-fpO"/>
                                     <segue destination="Hor-RB-HLk" kind="show" id="nOc-Yu-HZr"/>
                                 </connections>
                             </button>
@@ -690,6 +707,7 @@
                     <navigationItem key="navigationItem" id="YDC-Nd-0wr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xz8-ik-GHG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="7vl-ZC-HJo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4024.6376811594205" y="85.714285714285708"/>
         </scene>
@@ -1169,13 +1187,15 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVs-qT-pRU">
-                                <rect key="frame" x="318" y="743" width="38" height="53"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehA-sg-u88">
+                                <rect key="frame" x="311" y="756" width="47" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <state key="normal" title="➡️"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="✅ "/>
                                 <connections>
-                                    <action selector="seeResults:" destination="Itn-dL-0wO" eventType="touchUpInside" id="ITk-en-lCq"/>
+                                    <action selector="seeResultsButton:" destination="Itn-dL-0wO" eventType="touchUpInside" id="Y4e-9x-MB3"/>
+                                    <action selector="submitName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LRk-JT-OhX"/>
+                                    <segue destination="cFo-br-6tF" kind="show" identifier="seeResults4" id="WjW-PH-pTp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1613,7 +1633,8 @@
         <image name="F2508E52-7012-40ED-BC09-D92E5CDB088E" width="720" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HhB-7N-gjY"/>
+        <segue reference="WjW-PH-pTp"/>
+        <segue reference="nRN-8d-Nas"/>
         <segue reference="3TG-KC-3vr"/>
         <segue reference="xMV-PE-d0v"/>
         <segue reference="T4N-zb-yhs"/>

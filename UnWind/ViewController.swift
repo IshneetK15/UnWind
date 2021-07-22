@@ -76,11 +76,64 @@ class ViewController: UIViewController {
     
     // Question 4
     
+    @IBAction func choiceOne4(_ sender: UIButton) {
+        totalPoints = totalPoints + 2
+    }
+    
+    @IBAction func choiceTwo4(_ sender: UIButton) {
+        totalPoints = totalPoints + 3
+    }
+    
+    @IBAction func choiceThree4(_ sender: UIButton) {
+        totalPoints = totalPoints + 2
+    }
     
     // Question 5
     
+   
+    @IBAction func choiceOne5(_ sender: UIButton) {
+        totalPoints = totalPoints + 0
+    }
+    
+    @IBAction func choiceTwo5(_ sender: UIButton) {
+        totalPoints = totalPoints + 1
+    }
+    
+    @IBAction func choiceThree5(_ sender: UIButton) {
+        totalPoints = totalPoints + 3
+    }
+    
+    @IBAction func choiceFour5(_ sender: UIButton) {
+        totalPoints = totalPoints + 4
+    }
+    
+    @IBAction func choiceFive5(_ sender: UIButton) {
+        totalPoints = totalPoints + 2
+    }
+    
     // Question 6
     
+    
+    @IBAction func choiceOne6(_ sender: UIButton) {
+        totalPoints = totalPoints + 0
+    }
+    
+    
+    @IBAction func choiceTwo6(_ sender: UIButton) {
+        totalPoints = totalPoints + 1
+    }
+    
+    @IBAction func choiceThree6(_ sender: UIButton) {
+        totalPoints = totalPoints + 3
+    }
+    
+    @IBAction func choiceFour6(_ sender: UIButton) {
+        totalPoints = totalPoints + 4
+    }
+    
+    @IBAction func choiceFive6(_ sender: UIButton) {
+        totalPoints = totalPoints + 2
+    }
     
     // Question 7
     
@@ -161,17 +214,17 @@ class ViewController: UIViewController {
     // Results
     
     @IBAction func seeResults(_ sender: UIButton) {
-        if totalPoints < 2 {
-             
+        if totalPoints > 25 {
+            performSegue(withIdentifier: "seeResults4", sender: nil)
         }
-        else if totalPoints < 5 {
-            
+        else if totalPoints > 15 {
+            performSegue(withIdentifier: "seeResults3", sender: nil)
         }
-        else if totalPoints < 7 {
-            
+        else if totalPoints > 10 {
+            performSegue(withIdentifier: "seeResults2", sender: nil)
         }
         else {
-            
+            performSegue(withIdentifier: "seeResults1", sender: nil)
         }
     }
     

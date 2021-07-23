@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,7 +30,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cLp-MR-eIq">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cLp-MR-eIq">
                                 <rect key="frame" x="4" y="235" width="398" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -51,20 +52,20 @@
                                     <segue destination="d44-JT-p9R" kind="show" id="NB0-cH-3Pw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIc-BW-hbo">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIc-BW-hbo">
                                 <rect key="frame" x="4" y="309" width="398" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="22"/>
                                 <state key="normal" title="2. Stress minimally affects me">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <action selector="choiceTwo:" destination="Dsp-CX-JVz" eventType="touchUpInside" id="M0Z-5C-Yg3"/>
                                     <segue destination="d44-JT-p9R" kind="show" id="jUj-5e-TMC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8hW-6q-NK2">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8hW-6q-NK2">
                                 <rect key="frame" x="4" y="390" width="398" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -72,7 +73,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="3. Stress sometimes affects me">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="22" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -83,20 +84,20 @@
                                     <segue destination="d44-JT-p9R" kind="show" id="rzT-N8-ndY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjl-wf-B7l">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjl-wf-B7l">
                                 <rect key="frame" x="4" y="476" width="398" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="21"/>
                                 <state key="normal" title="4. Stress affects my daily life">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <action selector="choiceFour:" destination="Dsp-CX-JVz" eventType="touchUpInside" id="eJM-4I-wvQ"/>
                                     <segue destination="d44-JT-p9R" kind="show" id="Swe-Ay-QMc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X2E-ZO-TQ4">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X2E-ZO-TQ4">
                                 <rect key="frame" x="6" y="556" width="396" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -130,8 +131,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.67813177897132326" green="1" blue="0.93759129147212594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="h6i-fB-45J"/>
+                        <color key="backgroundColor" red="0.67813177897132326" green="1" blue="0.93759129147212594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="IN1-a0-YXJ"/>
                 </viewController>
@@ -161,7 +162,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CUx-JP-xcx">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CUx-JP-xcx">
                                 <rect key="frame" x="20" y="350" width="374" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -169,7 +170,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="B. No">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -180,7 +181,7 @@
                                     <segue destination="wXi-yd-1lG" kind="show" id="nep-K1-V4q"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CM1-Rx-mWb">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CM1-Rx-mWb">
                                 <rect key="frame" x="21" y="425" width="373" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -188,7 +189,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="C. Prefer not to say">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -200,7 +201,7 @@
                                     <segue destination="wXi-yd-1lG" kind="show" id="g9R-N4-gpc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mip-fk-fiV">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mip-fk-fiV">
                                 <rect key="frame" x="21" y="266" width="373" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -208,7 +209,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="A. Yes">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -248,8 +249,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.64796073589661185" green="1" blue="0.95952844381406277" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="PgE-cS-vvT"/>
+                        <color key="backgroundColor" red="0.64796073589661185" green="1" blue="0.95952844381406277" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="hXf-us-YSj"/>
                 </viewController>
@@ -266,7 +267,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qB5-4n-Npg">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qB5-4n-Npg">
                                 <rect key="frame" x="38" y="266" width="338" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -274,7 +275,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="A. Yes">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -285,7 +286,7 @@
                                     <segue destination="ILk-rQ-V8N" kind="show" id="xzA-6Y-b5k"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MDt-fk-ZWF">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MDt-fk-ZWF">
                                 <rect key="frame" x="38" y="359" width="338" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -293,7 +294,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="B. No">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -304,7 +305,7 @@
                                     <segue destination="ILk-rQ-V8N" kind="show" id="UYL-4m-oRW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UhS-a8-BK3">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UhS-a8-BK3">
                                 <rect key="frame" x="38" y="445" width="338" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -312,7 +313,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="C. Prefer not to say">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -350,8 +351,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.67813177899999999" green="1" blue="0.93759129149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="JHS-m1-lV8"/>
+                        <color key="backgroundColor" red="0.67813177899999999" green="1" blue="0.93759129149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Mwb-PE-22Y"/>
                 </viewController>
@@ -368,7 +369,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OoC-aY-90D">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OoC-aY-90D">
                                 <rect key="frame" x="10" y="257" width="369" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -376,7 +377,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="A. Yes">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -387,26 +388,26 @@
                                     <segue destination="m5d-Nw-zYC" kind="show" id="yHV-F2-FyO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tni-cz-UgV">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tni-cz-UgV">
                                 <rect key="frame" x="10" y="345" width="369" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
                                 <state key="normal" title="B. No">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <action selector="choiceTwo4:" destination="ABG-56-fdf" eventType="touchUpInside" id="Zvy-VP-Dd3"/>
                                     <segue destination="m5d-Nw-zYC" kind="show" id="BaD-54-uww"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEa-K5-WH6">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEa-K5-WH6">
                                 <rect key="frame" x="10" y="433" width="369" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
                                 <state key="normal" title="C. Prefer not to say">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <action selector="choiceThree4:" destination="ABG-56-fdf" eventType="touchUpInside" id="obG-Qn-8eT"/>
@@ -440,8 +441,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.67813177899999999" green="1" blue="0.93759129149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="yz8-DO-rEC"/>
+                        <color key="backgroundColor" red="0.67813177899999999" green="1" blue="0.93759129149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="M2D-wZ-7vc"/>
                 </viewController>
@@ -458,7 +459,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AGW-6x-S9n">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AGW-6x-S9n">
                                 <rect key="frame" x="28" y="223" width="348" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -466,7 +467,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="A. Excellent">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -478,20 +479,20 @@
                                     <segue destination="Qaf-tH-3c0" kind="show" id="7bC-Td-sFw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHf-2m-RA6">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHf-2m-RA6">
                                 <rect key="frame" x="28" y="306" width="348" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
                                 <state key="normal" title="B. Satisfactory">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <action selector="choiceTwo5:" destination="hOs-Y9-bmf" eventType="touchUpInside" id="7Qv-PW-83V"/>
                                     <segue destination="Qaf-tH-3c0" kind="show" id="HF5-Fo-fOn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uzV-gn-qlg">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uzV-gn-qlg">
                                 <rect key="frame" x="28" y="399" width="348" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -499,7 +500,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="C. Okay">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -510,7 +511,7 @@
                                     <segue destination="Qaf-tH-3c0" kind="show" id="RXU-Mk-h56"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebU-3f-5J9">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebU-3f-5J9">
                                 <rect key="frame" x="28" y="490" width="348" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -518,7 +519,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="D. Not sufficient">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -529,7 +530,7 @@
                                     <segue destination="Qaf-tH-3c0" kind="show" id="gqI-bl-cmy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="acr-1f-Wg8">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="acr-1f-Wg8">
                                 <rect key="frame" x="28" y="579" width="348" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -537,7 +538,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="E. Prefer not to say">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -576,8 +577,8 @@
                                 <color key="shadowColor" red="0.70394021829999998" green="0.36670135749999999" blue="0.66735176139999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.67813177899999999" green="1" blue="0.93759129149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="ilL-N7-l1s"/>
+                        <color key="backgroundColor" red="0.67813177899999999" green="1" blue="0.93759129149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="kOo-sH-bKl"/>
                 </viewController>
@@ -600,7 +601,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="How have your eating patterns been?">
                                         <attributes>
-                                            <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="NSColor" systemColor="labelColor"/>
                                             <font key="NSFont" size="28" name="Futura-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -608,7 +609,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IIM-di-Uzo">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IIM-di-Uzo">
                                 <rect key="frame" x="24" y="221" width="361" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -616,7 +617,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="A. Excellent">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -628,7 +629,7 @@
                                     <segue destination="Hor-RB-HLk" kind="show" id="kr2-wI-x2i"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pJ9-iv-F71">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pJ9-iv-F71">
                                 <rect key="frame" x="23" y="295" width="361" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -636,7 +637,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="B. Satisfactory">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -647,7 +648,7 @@
                                     <segue destination="Hor-RB-HLk" kind="show" id="h6d-iH-GQp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Igl-fx-yge">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Igl-fx-yge">
                                 <rect key="frame" x="24" y="381" width="361" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -655,7 +656,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="C. Okay">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -666,7 +667,7 @@
                                     <segue destination="Hor-RB-HLk" kind="show" id="jZr-rj-br5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MRu-7k-9eV">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MRu-7k-9eV">
                                 <rect key="frame" x="24" y="461" width="361" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -674,7 +675,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="D. Not sufficient">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -685,13 +686,13 @@
                                     <segue destination="Hor-RB-HLk" kind="show" id="GOk-IA-JZp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PlY-tP-AAk">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PlY-tP-AAk">
                                 <rect key="frame" x="24" y="543" width="361" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
                                 <state key="normal" title="E. Prefer not to say">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <action selector="choiceFive6:" destination="7vl-ZC-HJo" eventType="touchUpInside" id="KK3-sa-fpO"/>
@@ -712,8 +713,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.67813177899999999" green="1" blue="0.93759129149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="VSg-af-mT9"/>
+                        <color key="backgroundColor" red="0.67813177899999999" green="1" blue="0.93759129149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="YDC-Nd-0wr"/>
                 </viewController>
@@ -743,7 +744,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uq4-oq-5gq">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uq4-oq-5gq">
                                 <rect key="frame" x="10" y="209" width="359" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -751,7 +752,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="A. 1 day">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -762,7 +763,7 @@
                                     <segue destination="Dml-JX-Bv2" kind="show" id="gyU-6E-tDB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFY-pH-MKv">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cFY-pH-MKv">
                                 <rect key="frame" x="7" y="293" width="362" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -770,7 +771,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="B. 2-3 days">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -781,7 +782,7 @@
                                     <segue destination="Dml-JX-Bv2" kind="show" id="GHC-V1-h4S"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GL5-r4-pYf">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GL5-r4-pYf">
                                 <rect key="frame" x="7" y="375" width="362" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -789,7 +790,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="C. 4-6 days">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -800,20 +801,20 @@
                                     <segue destination="Dml-JX-Bv2" kind="show" id="T4N-zb-yhs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLb-Ww-6OZ">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLb-Ww-6OZ">
                                 <rect key="frame" x="10" y="453" width="359" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
                                 <state key="normal" title="D. 2 weeks">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <action selector="choiceFour7:" destination="4v3-ZB-8QS" eventType="touchUpInside" id="X6q-3N-ubR"/>
                                     <segue destination="Dml-JX-Bv2" kind="show" id="ScG-7X-zLC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tn8-5C-45c">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tn8-5C-45c">
                                 <rect key="frame" x="10" y="535" width="359" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -821,7 +822,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="E. 2+ weeks">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -847,8 +848,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.67813177899999999" green="1" blue="0.93759129149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="1fw-By-PNW"/>
+                        <color key="backgroundColor" red="0.67813177899999999" green="1" blue="0.93759129149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="zmX-7S-8Qm"/>
                 </viewController>
@@ -877,7 +878,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v27-pE-mAy">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v27-pE-mAy">
                                 <rect key="frame" x="23" y="259" width="355" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -885,7 +886,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="B. Work">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -896,20 +897,20 @@
                                     <segue destination="Mh5-BD-1Lh" kind="show" id="wpQ-ua-bub"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2L5-bD-3L3">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2L5-bD-3L3">
                                 <rect key="frame" x="20" y="344" width="358" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
                                 <state key="normal" title="C. Family/Friends">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <action selector="choiceThree8:" destination="DDw-6Z-9Hw" eventType="touchUpInside" id="gJX-77-F5S"/>
                                     <segue destination="Mh5-BD-1Lh" kind="show" id="LEY-Pt-ePr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xX5-kF-uLu">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xX5-kF-uLu">
                                 <rect key="frame" x="19" y="426" width="359" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -917,7 +918,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="D. Trauma">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -928,7 +929,7 @@
                                     <segue destination="Mh5-BD-1Lh" kind="show" id="O29-4q-3AN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TA7-tO-D8B">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TA7-tO-D8B">
                                 <rect key="frame" x="17" y="511" width="361" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -936,7 +937,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="E. Other">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -947,7 +948,7 @@
                                     <segue destination="Mh5-BD-1Lh" kind="show" id="xMV-PE-d0v"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GR0-l4-ObB">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GR0-l4-ObB">
                                 <rect key="frame" x="23" y="184" width="355" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -955,7 +956,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="A. School">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -980,8 +981,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.67813177899999999" green="1" blue="0.93759129149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="H0O-rc-x2y"/>
+                        <color key="backgroundColor" red="0.67813177899999999" green="1" blue="0.93759129149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Er0-vd-6mf"/>
                 </viewController>
@@ -1011,7 +1012,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8sA-ge-pD0">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8sA-ge-pD0">
                                 <rect key="frame" x="25" y="322" width="341" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1019,7 +1020,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="B. Slightly">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -1030,7 +1031,7 @@
                                     <segue destination="X15-5J-5DI" kind="show" id="j92-rd-4Fr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="raV-Xh-izo">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="raV-Xh-izo">
                                 <rect key="frame" x="25" y="399" width="341" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1038,7 +1039,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="C. Sometimes">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -1049,7 +1050,7 @@
                                     <segue destination="X15-5J-5DI" kind="show" id="7FS-9i-0Bf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ub8-3C-Ynh">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ub8-3C-Ynh">
                                 <rect key="frame" x="25" y="480" width="341" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1057,7 +1058,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="D. Frequently">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -1068,7 +1069,7 @@
                                     <segue destination="X15-5J-5DI" kind="show" id="Bla-nx-zq3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7k4-Fu-zfI">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7k4-Fu-zfI">
                                 <rect key="frame" x="20" y="557" width="346" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1076,7 +1077,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="E. All the time">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
@@ -1088,7 +1089,7 @@
                                     <segue destination="X15-5J-5DI" kind="show" id="IqO-Yw-erf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QuJ-WL-I3e">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QuJ-WL-I3e">
                                 <rect key="frame" x="25" y="244" width="341" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1096,7 +1097,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="A. Not at all">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -1121,8 +1122,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.67813177899999999" green="1" blue="0.93759129149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="8W3-42-N1U"/>
+                        <color key="backgroundColor" red="0.67813177899999999" green="1" blue="0.93759129149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="hlo-7Y-cBI"/>
                 </viewController>
@@ -1145,7 +1146,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Is there someone/thing you often turn to for help coping?">
                                         <attributes>
-                                            <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="NSColor" systemColor="labelColor"/>
                                             <font key="NSFont" size="28" name="Futura-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -1153,7 +1154,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNJ-BB-vYS">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNJ-BB-vYS">
                                 <rect key="frame" x="20" y="251" width="346" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1161,7 +1162,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="A. Yes">
                                             <attributes>
-                                                <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="NSColor" systemColor="labelColor"/>
                                                 <font key="NSFont" size="28" name="Menlo-Regular"/>
                                             </attributes>
                                         </fragment>
@@ -1171,13 +1172,13 @@
                                     <action selector="choiceOne10:" destination="Itn-dL-0wO" eventType="touchUpInside" id="kFu-PF-MWM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUg-wu-Pw2">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUg-wu-Pw2">
                                 <rect key="frame" x="20" y="335" width="346" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.89000000000000001" green="0.74698789160000001" blue="0.85859938530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
                                 <state key="normal" title="B. No">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
                                     <action selector="choiceTwo10:" destination="Itn-dL-0wO" eventType="touchUpInside" id="3k5-F0-af4"/>
@@ -1196,7 +1197,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehA-sg-u88">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehA-sg-u88">
                                 <rect key="frame" x="-55" y="361" width="525" height="310"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="62"/>
@@ -1204,12 +1205,12 @@
                                 <connections>
                                     <action selector="seeResultsButton:" destination="Itn-dL-0wO" eventType="touchUpInside" id="Y4e-9x-MB3"/>
                                     <action selector="submitName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LRk-JT-OhX"/>
-                                    <segue destination="dhB-Ux-9HN" kind="show" id="GJJ-Ob-Qg8"/>
+                                    <segue destination="cFo-br-6tF" kind="show" identifier="seeResults4" id="FXc-W6-lpL"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.67813177899999999" green="1" blue="0.93759129149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="gSP-17-LZy"/>
+                        <color key="backgroundColor" red="0.67813177899999999" green="1" blue="0.93759129149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="Cnp-uA-dSe"/>
                 </viewController>
@@ -1223,7 +1224,7 @@
             <objects>
                 <viewController id="dhB-Ux-9HN" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H6v-7K-iCG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjh-4f-UfP">
@@ -1239,7 +1240,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHU-hR-4bc">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHU-hR-4bc">
                                 <rect key="frame" x="321" y="742" width="38" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
@@ -1274,7 +1275,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4U-vr-ZJQ">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4U-vr-ZJQ">
                                 <rect key="frame" x="184" y="267" width="131" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="playlist click here!!!"/>
@@ -1295,7 +1296,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1b-n5-6GI">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1b-n5-6GI">
                                 <rect key="frame" x="0.0" y="683" width="206" height="159"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
@@ -1305,8 +1306,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.87091079689999995" green="0.81231305470000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="RUn-Ml-2FD"/>
+                        <color key="backgroundColor" red="0.87091079689999995" green="0.81231305470000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="dPT-5I-RU9"/>
                 </viewController>
@@ -1315,10 +1316,10 @@
             </objects>
             <point key="canvasLocation" x="7479.7101449275369" y="107.8125"/>
         </scene>
-        <!--View Controller-->
+        <!--seeResults2-->
         <scene sceneID="USl-ha-aS1">
             <objects>
-                <viewController id="3JV-AO-WwT" sceneMemberID="viewController">
+                <viewController title="seeResults2" id="3JV-AO-WwT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b5d-r6-a6q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1336,13 +1337,13 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1j-5X-tsf">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1j-5X-tsf">
                                 <rect key="frame" x="314" y="755" width="54" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="➡️"/>
                                 <connections>
-                                    <segue destination="q1v-Oq-lo4" kind="show" id="0L1-g5-4p7"/>
+                                    <segue destination="q1v-Oq-lo4" kind="show" identifier="" id="0L1-g5-4p7"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUF-ug-8NP">
@@ -1403,8 +1404,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.84516122108186997" green="0.81529714737436332" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Ffe-Su-gpA"/>
+                        <color key="backgroundColor" red="0.84516122108186997" green="0.81529714737436332" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="KyN-Z7-8MZ"/>
                 </viewController>
@@ -1412,10 +1413,10 @@
             </objects>
             <point key="canvasLocation" x="8176.811594202899" y="107.8125"/>
         </scene>
-        <!--View Controller-->
+        <!--seeResults3-->
         <scene sceneID="HId-S6-qBs">
             <objects>
-                <viewController id="q1v-Oq-lo4" sceneMemberID="viewController">
+                <viewController title="seeResults3" id="q1v-Oq-lo4" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ATo-7o-XCf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1433,7 +1434,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cd3-yD-eue">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cd3-yD-eue">
                                 <rect key="frame" x="340" y="755" width="54" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
@@ -1483,8 +1484,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.87091079689999995" green="0.81231305470000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="MOh-AS-bwJ"/>
+                        <color key="backgroundColor" red="0.87091079689999995" green="0.81231305470000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="r26-Yh-lPt"/>
                 </viewController>
@@ -1492,10 +1493,10 @@
             </objects>
             <point key="canvasLocation" x="8878.2608695652179" y="107.8125"/>
         </scene>
-        <!--View Controller-->
+        <!--seeResults4-->
         <scene sceneID="Z6t-cx-SY9">
             <objects>
-                <viewController id="cFo-br-6tF" sceneMemberID="viewController">
+                <viewController title="seeResults4" id="cFo-br-6tF" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yVx-i4-3bN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1540,8 +1541,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.87091079689999995" green="0.81231305470000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="qYS-LO-93d"/>
+                        <color key="backgroundColor" red="0.87091079689999995" green="0.81231305470000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="6m5-Ig-ZVX"/>
                 </viewController>
@@ -1584,7 +1585,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAx-BU-Wsh">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAx-BU-Wsh">
                                 <rect key="frame" x="332" y="765" width="45" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -1618,7 +1619,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JL4-js-Kgm">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JL4-js-Kgm">
                                 <rect key="frame" x="304" y="442" width="45" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
@@ -1639,8 +1640,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.87091079693519102" green="0.8123130547225752" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.87091079693519102" green="0.8123130547225752" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="j7d-71-NH3"/>
                     <connections>
@@ -1654,10 +1655,8 @@
             <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="kwk_yarnf" width="1000" height="1000"/>
-    </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="OCQ-03-Pxr"/>
         <segue reference="3TG-KC-3vr"/>
         <segue reference="xMV-PE-d0v"/>
         <segue reference="T4N-zb-yhs"/>
@@ -1668,4 +1667,10 @@
         <segue reference="nep-K1-V4q"/>
         <segue reference="Xib-wp-YGm"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="kwk_yarnf" width="1000" height="1000"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

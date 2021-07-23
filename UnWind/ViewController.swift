@@ -8,7 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+//    struct MyVariables {
+//         var totalPoints = 0
+//    }
+//    var pointSystem = MyVariables()
+//    print(pointSystem.totalPoints)
     var totalPoints = 0;
 
     @IBOutlet weak var nameChange: UILabel!
@@ -212,8 +216,9 @@ class ViewController: UIViewController {
     
     
     // Results
-    
+    // var totalPoints1 = 20
     @IBAction func seeResults(_ sender: UIButton) {
+        print(totalPoints)
         if totalPoints > 25 {
             performSegue(withIdentifier: "seeResults4", sender: nil)
         }
